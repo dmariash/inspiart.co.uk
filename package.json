@@ -23,7 +23,7 @@
     "gatsby-transformer-remark": "^1.7.39",
     "gatsby-transformer-sharp": "^1.6.22",
     "jwt-simple": "^0.5.1",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.13",
     "lodash-webpack-plugin": "^0.11.4",
     "prop-types": "^15.6.1",
     "react-bulma-components": "^1.5.0",
