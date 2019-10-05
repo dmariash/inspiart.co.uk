@@ -1,0 +1,71 @@
+@import "~bulma/sass/utilities/initial-variables"
+@import url('https://fonts.googleapis.com/css?family=Adamina|Alex+Brush');
+@import url('https://use.fontawesome.com/releases/v5.1.0/css/all.css');
+
+$primary: #00d1b2
+$primary-invert: #ffffff
+
+
+.contents
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+
+.margin-top-0
+  margin-top: 0 !important
+
+@import "~bulma"
+
+body 
+  font-family: 'Adamina', monospace
+
+.content h1, h2, h3, h4, h5
+  color: #192b50 !important
+  text-transform: uppercase
+
+h2.login
+  text-transform: none
+
+.hero.is-light
+  background-color: white
+  color: #192b50 !important
+
+.bottom-fern
+  position: fixed
+  bottom: 0
+  left: 0
+  z-index: 300
+  width: 30%
+
+.hero.is-fullheight
+  min-height: 0
+
+.content.is-box
+  border: 3px solid #af9b2d
+  padding: 2em 4em
+  text-align: left
+
+.page-contents
+  text-align: center
+
+hr
+  background-color: #af9b2d
+
+@media (max-width: 500px)
+  h4
+    font-size: 0.8rem !important
+  h2.is-size-2
+    font-size: 1.1rem !important
+  body
+    font-size: 0.7rem !important
+  .content.is-box
+    padding: 1em 2em !important
+    margin: 0.8rem 0rem 0.8rem 0rem !important
+  .hero-body.content
+    padding: 1.5rem 1.5rem !important
+  a.navbar-item
+    font-size: 1rem !important
+
+.react-photo-gallery--gallery img 
+  height: 100%;

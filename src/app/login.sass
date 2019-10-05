@@ -1,0 +1,42 @@
+.login-topborder
+  position: fixed
+  top: 0
+  right: 0
+  max-width: 500px
+
+.login-bottomborder
+  position: fixed
+  bottom: 0
+  left: 0
+  max-width: 500px
+
+.login-container
+  min-height: 100vh !important
+
+.login-container > .hero-body
+  z-index: 9999
+
+.login-container h2
+  font-family: 'Alex Brush', cursive
+  font-size: 6em
+  font-weight: 400
+  color: #192b50 !important
+
+.login-container .button.is-info
+  background-color: #192b50
+
+.login-container .button.is-info:active
+  background-color: #192b50
+
+.login-container .button.is-info:focus:not(:active)
+  box-shadow: 0 0 0 0.125em #3c5282
+
+.login-container .button.is-info:hover
+  background-color: #1d3361
+
+@media (max-width: 500px)
+  .login-topborder
+    max-width: 300px
+
+  .login-bottomborder
+    max-width: 300px
