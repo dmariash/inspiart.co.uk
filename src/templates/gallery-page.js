@@ -8,6 +8,16 @@ import ReactMarkdown from 'react-markdown'
 class GalleryPageTemplate extends React.Component {
   render() {
     const { image, description, images } = this.props;
+    const photos = [];
+    for (const i of images) {
+      var img = new Image()
+      img.src = i.src.publicURL
+      photos.push({
+        src: img.src,
+        width: Math.round(img.width / 1000),
+        height: Math.round(img.height / 1000)
+      })
+    }
     return (
       <div>
         <div
@@ -23,18 +33,14 @@ class GalleryPageTemplate extends React.Component {
           <div className="container">
             <div className="section">
               <div className="columns">
-                <div className="column is-12">
+                <div className="column is-2">
                   <div className="content">
                     <div className="columns">
                       <div className="column is-12">
                         <ReactMarkdown source={description} />
                       </div>
                     </div>
-
-                    
-                    <Gallery
-                      photos={images.map(i => {return {src: i.src.publicURL, width: 1, height: 1}})}
-                    />
+                    <Gallery photos={photos} targetRowHeight={200}/>
                   </div>
                 </div>
               </div>
