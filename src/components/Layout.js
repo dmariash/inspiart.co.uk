@@ -53,8 +53,8 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <Navbar />
       <div>{children}</div>
-      <footer class="footer is-light">
-        <div class="content has-text-centered">
+      <footer className="footer is-light">
+        <div className="content has-text-centered">
           <p>
             <a href="https://inspiart.co.uk">inspiart.co.uk</a>
           </p>

@@ -6,18 +6,29 @@ import Layout from '../components/Layout'
 import ReactMarkdown from 'react-markdown'
 
 class GalleryPageTemplate extends React.Component {
-  render() {
-    const { image, description, images } = this.props;
+
+  getPhotos = () => {
+    const { images } = this.props;
     const photos = [];
     for (const i of images) {
-      var img = new Image();
+      var img = document.createElement('img');
       img.src = i.src.publicURL
+      var unit = 1
+      if (img.width / 10 > 1) {unit = 10}
+      if (img.width / 100 > 1) {unit = 100}
+      if (img.width / 1000 > 1) {unit = 1000}
       photos.push({
         src: img.src,
-        width: Math.round(img.width / 1000),
-        height: Math.round(img.height / 1000)
+        width: Math.round(img.width / unit),
+        height: Math.round(img.height / unit)
       })
     }
+    return photos;
+  }
+
+  render() {
+    const { image, description } = this.props;
+    const photos = this.getPhotos();
     return (
       <div>
         <div
