@@ -80,7 +80,8 @@ export default GalleryPage
 
 export const galleryPageQuery = graphql`
 query GalleryPageTemplate {
-  markdownRemark(frontmatter: {}) {
+  markdownRemark(frontmatter: {templateKey: { eq: "gallery-page" } }) {
+    html
     frontmatter {
       image {
         childImageSharp {
