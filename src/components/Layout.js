@@ -55,9 +55,9 @@ const TemplateWrapper = ({ children }) => {
       <div>{children}</div>
       <footer className="footer is-light">
         <div className="content has-text-centered">
-          <p>
-            <a href="https://inspiart.co.uk">inspiart.co.uk</a>
-          </p>
+          <div>E-Mail: <strong><a href="mailto:inspiart@yahoo.co.uk">inspiart@yahoo.co.uk</a></strong></div>
+          <div>Phone: <strong>07946700869</strong></div>
+          <small>&copy; Copyright 2019, Stella Mariash</small>
         </div>
       </footer>
     </div>

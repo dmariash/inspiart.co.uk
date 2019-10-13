@@ -10,18 +10,20 @@ class GalleryPageTemplate extends React.Component {
   getPhotos = () => {
     const { images } = this.props;
     const photos = [];
-    for (const i of images) {
-      var img = document.createElement('img');
-      img.src = i.src.publicURL
-      var unit = 1
-      if (img.width / 10 > 1) {unit = 10}
-      if (img.width / 100 > 1) {unit = 100}
-      if (img.width / 1000 > 1) {unit = 1000}
-      photos.push({
-        src: img.src,
-        width: Math.round(img.width / unit),
-        height: Math.round(img.height / unit)
-      })
+    if (!!document) {
+      for (const i of images) {
+        var img = document.createElement('img');
+        img.src = i.src.publicURL
+        var unit = 1
+        if (img.width / 10 > 1) {unit = 10}
+        if (img.width / 100 > 1) {unit = 100}
+        if (img.width / 1000 > 1) {unit = 1000}
+        photos.push({
+          src: img.src,
+          width: Math.round(img.width / unit),
+          height: Math.round(img.height / unit)
+        })
+      }
     }
     return photos;
   }
