@@ -10,7 +10,7 @@ class GalleryPageTemplate extends React.Component {
     const { image, description, images } = this.props;
     const photos = [];
     for (const i of images) {
-      var img = new Image()
+      var img = new Image();
       img.src = i.src.publicURL
       photos.push({
         src: img.src,
@@ -33,7 +33,7 @@ class GalleryPageTemplate extends React.Component {
           <div className="container">
             <div className="section">
               <div className="columns">
-                <div className="column is-2">
+                <div className="column is-12">
                   <div className="content">
                     <div className="columns">
                       <div className="column is-12">
