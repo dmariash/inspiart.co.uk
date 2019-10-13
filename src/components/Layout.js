@@ -37,6 +37,10 @@ const TemplateWrapper = ({ children }) => {
           href={`${withPrefix('/')}img/safari-pinned-tab.svg`}
           color="#ff4400"
         />
+        <link 
+          href="https://fonts.googleapis.com/css?family=Courgette&display=swap"
+          rel="stylesheet"
+        />
         <meta name="theme-color" content="#fff" />
 
         <meta property="og:type" content="business.business" />
@@ -47,9 +51,15 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
       </Helmet>
-      This site is currently offline
-      {/* <Navbar /> */}
-      {/* <div>{children}</div> */}
+      <Navbar />
+      <div>{children}</div>
+      <footer class="footer is-light">
+        <div class="content has-text-centered">
+          <p>
+            <a href="https://inspiart.co.uk">inspiart.co.uk</a>
+          </p>
+        </div>
+      </footer>
     </div>
   )
 }
