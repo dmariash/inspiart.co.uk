@@ -10,7 +10,7 @@ class GalleryPageTemplate extends React.Component {
   getPhotos = () => {
     const { images } = this.props;
     const photos = [];
-    if (!!document) {
+    try {
       for (const i of images) {
         var img = document.createElement('img');
         img.src = i.src.publicURL
@@ -24,7 +24,10 @@ class GalleryPageTemplate extends React.Component {
           height: Math.round(img.height / unit)
         })
       }
+    } catch {
+      console.log('document not found')
     }
+      
     return photos;
   }
 
