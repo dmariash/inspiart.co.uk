@@ -13,7 +13,6 @@ It follows the [JAMstack architecture](https://jamstack.org) by using Git as a s
 - A simple landing page with blog functionality built with Netlify CMS
 - Editabe Pages: Landing, About, Product, Blog-Collection and Contact page with Netlify Form support
 - Create Blog posts from Netlify CMS
-- Tags: Separate page for posts under each tag
 - Basic directory organization
 - Uses Bulma for styling, but size is reduced by `purge-css-plugin`
 - Blazing fast loading times thanks to pre-rendered HTML and automatic chunk loading of JS files
@@ -67,7 +66,6 @@ import CMS from 'netlify-cms-app'
 // import cloudinary from 'netlify-cms-media-library-cloudinary'
 
 import AboutPagePreview from './preview-templates/AboutPagePreview'
-import BlogPostPreview from './preview-templates/BlogPostPreview'
 import ProductPagePreview from './preview-templates/ProductPagePreview'
 import IndexPagePreview from './preview-templates/IndexPagePreview'
 
@@ -77,7 +75,6 @@ import IndexPagePreview from './preview-templates/IndexPagePreview'
 CMS.registerPreviewTemplate('index', IndexPagePreview)
 CMS.registerPreviewTemplate('about', AboutPagePreview)
 CMS.registerPreviewTemplate('products', ProductPagePreview)
-CMS.registerPreviewTemplate('blog', BlogPostPreview)
 ```
 
 ## Getting Started (Without Netlify)
