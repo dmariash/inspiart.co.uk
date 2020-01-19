@@ -51,15 +51,15 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
       </Helmet>
-      {/* <Navbar /> */}
+      <Navbar />
       <div>Page Under Development</div>
-      {/* <footer className="footer is-light">
+      <footer className="footer is-light">
         <div className="content has-text-centered">
           <div>E-Mail: <strong><a href="mailto:inspiart@yahoo.co.uk">inspiart@yahoo.co.uk</a></strong></div>
           <div>Phone: <strong>07946700869</strong></div>
           <small>&copy; Copyright 2019, Stella Mariash</small>
         </div>
-      </footer> */}
+      </footer>
     </div>
   )
 }
