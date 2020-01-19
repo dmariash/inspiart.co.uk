@@ -1,7 +1,7 @@
 ---
 templateKey: 'gallery-page'
 path: /gallery
-image: /img/jumbotron-gallery.jpg
+image: /img/jumbotron/gallery.jpg
 description: |
   Below are example art works created by my students.
 images:

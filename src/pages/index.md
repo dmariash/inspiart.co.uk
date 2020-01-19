@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-image: /img/jumbotron-index.jpg
+image: /img/jumbotron/index.jpg
 description: |
   # Hi, I'm Stella!
 
@@ -12,24 +12,24 @@ description: |
   
   In my lessons I'm incorporating vocabulary and knowledge of specialist terms relevant to the chosen area study.
 products:
-  - image: /img/products-1.png
+  - image: /img/products/0001.png
     title: >
       Private lessons
     info: |
       One-to-one or one-to-two private or semi-private art lessons.
 
       Starting from **£30** per hour.
-  - image: /img/products-2.png
+  - image: /img/products/0002.png
     title: >
       Children lessons
     info: >
       Ages 5 and up, available Saturdays and Sundays.
-  - image: /img/products-3.png
+  - image: /img/products/0003.png
     title: >
       Adult lessons
     info: >
       Available weekdays.
-  - image: /img/products-4.png
+  - image: /img/products/0004.png
     title: >
       Art and craft parties
     info: >
